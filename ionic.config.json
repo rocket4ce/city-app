@@ -1,6 +1,6 @@
 {
   "name": "city-alert-app",
-  "app_id": "",
+  "app_id": "7045e499",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

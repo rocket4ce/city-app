@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      Demo 102
+      City Alert
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -9,4 +9,22 @@
 <ion-content padding>
   <button ion-button block (click)="getPicture()">Toma una foto</button>
   <img [src]="image" *ngIf="image" />
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Latitud</ion-label>
+      <ion-input type="text" [(ngModel)]="latitude"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Logitud</ion-label>
+      <ion-input type="text" [(ngModel)]="longitude"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  
+  <button ion-button block (click)="enviarAlerta()" *ngIf="foto">Enviar alerta</button>
 </ion-content>
+
+
